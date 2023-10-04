@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const BodyParser = require('body-parser');
 const cors = require('cors');
@@ -7,13 +9,10 @@ const portfolioRoute = require('./routes/portfolioRoutes');
 const auth = require('./middlewares/authMiddleware');
 
 
-const mongo_Connection = process.env.CONNECTION_URL;
-console.log(mongo_Connection)
-
 // Connect to the MongoDB database
 
 const app = express();
-const port = 8080; // Open port 8080 
+const port = 5001; // Open port 8080 
 
 // JSON Encoding allowing JSON Body to be parsed
 app.use(BodyParser.json());
