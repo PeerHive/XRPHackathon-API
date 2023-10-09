@@ -39,8 +39,7 @@ const Mainpage = {
                 return false;
 
             } else {
-                return true;
-                
+                return true;        
             }
         } finally {
             client.close();

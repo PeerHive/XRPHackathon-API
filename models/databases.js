@@ -4,6 +4,21 @@ const mongoose = require("mongoose");
 const CONNECTION_URL = process.env.CONNECTION_URL;
 const DATABASE_NAME = 'PeerHive';
 
+
+// Initialized MongoDB for XRP
+// Return: MongoDB connection
+async function rippleDatabase(){
+    const client = new MongoClient(CONNECTION_URL, {useNewUrlParser: true});
+    try {
+        await client.connect();
+        const db = client.db("XRP");
+        
+        return {client, db}
+    } catch (e) {
+        console.log("Error in connecting to XRP database: /n", e)
+    }
+}
+
 // Initialized Mongoose Database connection
 // Return: Mongoose Coonnection
 async function mongooseConnection() {
@@ -62,6 +77,7 @@ async function databaseQuery(col) {
 
 
 module.exports = { 
+    rippleDatabase,
     databaseConnection,
     databaseQuery,
     mongooseConnection
