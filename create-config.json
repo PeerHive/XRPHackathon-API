@@ -1,0 +1,12 @@
+{
+    "chainId": "1440002",
+    "nodes": 3,
+    "extraAccounts": [],
+    "safe": {
+        "owners": [
+            "0x96329A50d10a3F69311E4f4E108672926c51c474"
+        ],
+        "quorum": 1
+    }
+}
+

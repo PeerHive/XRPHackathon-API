@@ -5,6 +5,11 @@ const database = require('../models/databases');
 const User = require('../models/portfolioModels');
 const moment = require('moment');
 
+/*const connectXRPL = require("xrpl-evm-smart-contract")*/
+
+
+
+
 const coinGeckoClient = new CoinGecko();
 
 const mongouri = process.env.CONNECTION_URL;

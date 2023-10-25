@@ -19,6 +19,7 @@
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
     "dotenv": "^16.0.3",
+    "ethereumjs-tx": "^2.1.2",
     "express": "^4.18.2",
     "five-bells-condition": "^3.2.0",
     "jsonwebtoken": "^9.0.0",
@@ -26,6 +27,7 @@
     "mongodb": "^5.5.0",
     "mongoose": "^7.6.0",
     "underscore": "^1.13.6",
+    "web3": "^4.2.0",
     "xrpl": "^2.12.0",
     "xumm-sdk": "^1.9.1"
   },
